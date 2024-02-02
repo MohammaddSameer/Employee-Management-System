@@ -1,38 +1,38 @@
 bin/proFile: mainA3.o helperA3.o recruitEmployee.o printAll.o printOne.o lookOnId.o lookOnFullName.o sortEmployeesId.o countEmployees.o fireAll.o fireOne.o include/headerA3.h
 	gcc -Wall -std=c99 -g mainA3.o helperA3.o recruitEmployee.o printAll.o printOne.o lookOnId.o lookOnFullName.o sortEmployeesId.o countEmployees.o fireAll.o fireOne.o -o bin/proFile
 
-mainA3.o: src/mainA3.c include/headerA3.h
-	gcc -Wall -std=c99 -g -c src/mainA3.c
+mainA3.o: mainA3.c include/headerA3.h
+	gcc -Wall -std=c99 -g -c mainA3.c
 
-helperA3.o: src/helperA3.c include/headerA3.h
-	gcc -Wall -std=c99 -g -c src/helperA3.c
+helperA3.o: helperA3.c include/headerA3.h
+	gcc -Wall -std=c99 -g -c helperA3.c
 
-recruitEmployee.o: src/recruitEmployee.c include/headerA3.h
-	gcc -Wall -std=c99 -g -c src/recruitEmployee.c
+recruitEmployee.o: recruitEmployee.c include/headerA3.h
+	gcc -Wall -std=c99 -g -c recruitEmployee.c
 
-printAll.o: src/printAll.c include/headerA3.h
-	gcc -Wall -std=c99 -g -c src/printAll.c
+printAll.o: printAll.c include/headerA3.h
+	gcc -Wall -std=c99 -g -c printAll.c
 
-printOne.o: src/printOne.c include/headerA3.h
-	gcc -Wall -std=c99 -g -c src/printOne.c
+printOne.o: printOne.c include/headerA3.h
+	gcc -Wall -std=c99 -g -c printOne.c
 
-lookOnId.o: src/lookOnId.c include/headerA3.h
-	gcc -Wall -std=c99 -g -c src/lookOnId.c
+lookOnId.o: lookOnId.c include/headerA3.h
+	gcc -Wall -std=c99 -g -c lookOnId.c
 
-lookOnFullName.o: src/lookOnFullName.c include/headerA3.h
-	gcc -Wall -std=c99 -g -c src/lookOnFullName.c
+lookOnFullName.o: lookOnFullName.c include/headerA3.h
+	gcc -Wall -std=c99 -g -c lookOnFullName.c
 
-sortEmployeesId.o: src/sortEmployeesId.c include/headerA3.h
-	gcc -Wall -std=c99 -g -c src/sortEmployeesId.c
+sortEmployeesId.o: sortEmployeesId.c include/headerA3.h
+	gcc -Wall -std=c99 -g -c sortEmployeesId.c
 
-countEmployees.o: src/countEmployees.c include/headerA3.h
-	gcc -Wall -std=c99 -g -c src/countEmployees.c
+countEmployees.o: countEmployees.c include/headerA3.h
+	gcc -Wall -std=c99 -g -c countEmployees.c
 
-fireAll.o: src/fireAll.c include/headerA3.h
-	gcc -Wall -std=c99 -g -c src/fireAll.c
+fireAll.o: fireAll.c include/headerA3.h
+	gcc -Wall -std=c99 -g -c fireAll.c
 
-fireOne.o: src/fireOne.c include/headerA3.h
-	gcc -Wall -std=c99 -g -c src/fireOne.c
+fireOne.o: fireOne.c include/headerA3.h
+	gcc -Wall -std=c99 -g -c fireOne.c
 
 clean:
 	rm *.o bin/proFile -f
